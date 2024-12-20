@@ -1,0 +1,236 @@
+h2 {
+    color: rgb(0, 157, 196);
+    float: center;
+    }
+    
+    .menu {
+    color: white;
+    background-color: red;
+    height:100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    }
+    
+    .main {
+   
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .main:hover {
+                background-color: green;
+    }
+    .breakfast {
+   
+        border-radius: 10px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .breakfast:hover {
+                background-color: green;
+    }
+    
+    
+    .hot {
+    
+        border-radius:10px;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+    .hot:hover {
+        background-color: green;
+}
+    
+    .garnish {
+        border-radius: 10px 10px 0px 0px;
+        background-color: rgb(0, 135, 176);
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        
+    }
+           
+    .salad {
+    
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .salad:hover {
+                background-color: green;
+    }
+    
+    .soup {
+   
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .soup:hover {
+                background-color: green;
+    }
+    .snacks {
+   
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .snacks:hover {
+                background-color: green;
+    }
+    .desert {
+   
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .desert:hover {
+                background-color: green;
+    }
+    
+    .bakeryproducts {
+  
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .bakeryproducts:hover {
+                background-color: green;
+    }
+    .drink {
+    
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .drink:hover {
+                background-color: green;
+    }
+    .sause {
+   
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .sause:hover {
+                background-color: green;
+    }
+    .seeproduct {
+    
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .seeproduct:hover {
+                background-color: green;
+    }
+    
+    .delicatessen {
+    
+       
+        border-radius: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .delicatessen:hover {
+                background-color: green;
+    }
+    
+    .inkorzina {
+    border-radius: 10px;
+        background-color: rgb(24, 163, 0);
+        color: white;
+        border-color: rgb(24, 163, 0);
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+            .inkorzina:hover {           
+    border-color: rgb(0, 145, 5);
+    color: rgb(0, 156, 60);
+    background-color: rgb(255, 255, 255);
+    }
+    .tovar {
+    border-radius: 10px;
+        border-color: blue;
+        color: blue;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .end {
+        background-color: rgb(255, 0, 0);
+        float: center;
+        color: rgb(255, 255, 255);
+        height: 100px;
+        
+     }
+    
+     .korzina {
+        border-radius: 10px;
+            background-color: rgb(0, 117, 190);
+            color: white;
+            border-color: rgb(0, 117, 190);
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+                .korzina:hover {           
+        border-color: rgb(0, 145, 5);
+        color: rgb(0, 156, 60);
+        background-color: rgb(255, 255, 255);
+        }
+    .cur1 {
+text-align:justify;
+font-size: 20px;
+    }

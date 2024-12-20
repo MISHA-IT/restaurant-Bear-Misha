@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ ресторана</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chat-box { width: 100%; height: 300px; border: 1px solid #ccc; overflow-y: auto; padding: 10px; }
+        #input-area { display: flex; margin-top: 10px; }
+        #user-input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        #send-btn { padding: 10px 20px; margin-left: 10px; border: none; background: #28a745; color: white; cursor: pointer; border-radius: 4px; }
+        #send-btn:hover { background: #218838; }
+        .message { margin: 5px 0; }
+        .user { color: blue; }
+        .system { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Привет, я помощник по навигации по сайту ресторана!</h1>
+    <div id="chat-box"></div>
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="Введите ваш вопрос...">
+        <button id="send-btn">Отправить</button>
+    </div>
+    <script>// Предопределённые вопросы и ответы
+const responses = {
+    "привет": "Здравствуйте! Как я могу помочь?",
+    "как тебя зовут?": "Я - система автоматических ответов.",
+    "какая сегодня погода?": "Сегодня солнечно и ясно!",
+    "пока": "До свидания! Хорошего дня!",
+  "как попасть в меню?": "Зайдите на главную сайта, и нажмите на кнопку меню!",
+  "как попасть в меню": "Зайдите на главную сайта, и нажмите на кнопку меню!",
+  "как попасть в ваше меню?": "Зайдите на главную сайта, и нажмите на кнопку меню!",
+  "как попасть в ваше меню": "Зайдите на главную сайта, и нажмите на кнопку меню!",
+  "как попасть в меню ресторана Сытый медвежонок Миша?": "Зайдите на главную сайта, и нажмите на кнопку меню!",
+  "как попасть в меню ресторана сытый медвежонок Миша": "Зайдите на главную сайта, и нажмите на кнопку меню!",
+  "как заказывать продукты домой": "На главной нашего сайта кликните по кнопке оформить заказ. Далее нажмите в корзину, после этого выберите пункт заказать домой! ВСё!",
+  "Скажи,какое блюдо стоит попробовать?": "По оценкам клиентов лучшее блюдо: курица на гриле! ",
+   "Скажи какое блюдо стоит попробовать": "По оценкам клиентов лучшее блюдо: курица на гриле! ",
+   "Скажи,какое блюдо стоит попробовать в вашем ресторане?": "По оценкам клиентов лучшее блюдо: курица на гриле! ",
+   "Скажи какое блюдо стоит попробовать в вашем ресторане": "По оценкам клиентов лучшее блюдо: курица на гриле! ",
+   "Скажи,какое блюдо тебе больше всего нравиться? ": "По оценкам клиентов лучшее блюдо: курица на гриле! ",
+  "как заказать день рождение в ресторане": "На главной странице нажмите кнопку день рождение,там будет подробная инструкция!"
+};
+
+// Элементы страницы
+const chatBox = document.getElementById('chat-box');
+const userInput = document.getElementById('user-input');
+const sendBtn = document.getElementById('send-btn');
+
+// Функция для добавления сообщений в чат
+function addMessage(text, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('message', sender);
+    messageDiv.textContent = text;
+    chatBox.appendChild(messageDiv);
+    chatBox.scrollTop = chatBox.scrollHeight; // Прокрутка вниз
+}
+
+// Обработчик отправки сообщения
+function handleSend() {
+    const userMessage = userInput.value.trim().toLowerCase(); // Убираем пробелы и приводим к нижнему регистру
+    if (!userMessage) return;
+
+    // Добавляем сообщение пользователя
+    addMessage(userMessage, 'user');
+
+    // Получаем ответ системы
+    const systemResponse = responses[userMessage] || "Извините, я не знаю ответа на этот вопрос.";
+    addMessage(systemResponse, 'system');
+
+    // Очищаем поле ввода
+    userInput.value = '';
+}
+
+// Событие клика на кнопку
+sendBtn.addEventListener('click', handleSend);
+
+// Обработка Enter для отправки
+userInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        handleSend();
+    }
+});</script>
+</body>
+</html>
