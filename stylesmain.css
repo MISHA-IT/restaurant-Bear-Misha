@@ -6,6 +6,8 @@
     font-size: 20px;
     cursor: pointer;   
     text-align: center;
+    display: inline;
+    margin: 7px;
 }
 .panel_additional_navigation {
     text-align: center;
@@ -34,12 +36,13 @@
 }
 .panel_navigate_restaurant {
    background-image:
-   url('https://lh3.googleusercontent.com/pw/AP1GczP9zNT38yj-G-2O6osH0DbeXvyJblLwF7UhWDjWFWxIzm_33oV3CgHmgHTteV8a0P01LyDBZvVlzCkubiGJp3I2xopPc3hshufpyivFah0EHfM2cak=w2400');
+   url('https://lh3.googleusercontent.com/pw/AP1GczOpxPmNGAc_JqdTNWV8gGV1Cfa392G3JDrunKPZVha1kvyigX63v7uOa4roWLhlnLeoe9BmkS3jChI3mMwar_DSc_hRIUMZFlL-32EcW7DAi0Ryo0A=w2400');
    background-position: center;
    background-size: cover;
    height: 500px;
    color: rgb(255, 0, 0);
    text-align: center;
+
 }
 
 .birthday_block {
@@ -77,6 +80,7 @@ padding: 5px;
        color: white;
        border: none;
        font-size: 20px;
+       display: inline;
        cursor: pointer;
        transition: background-color 0.5s;
    }
@@ -84,17 +88,18 @@ padding: 5px;
                background-color: blue;
                color: white;
    }
-   .main {
+   .main_page {
    
        border-radius: 10px;
        background-color: red;
        color: white;
        border: none;
        font-size: 20px;
+       display: inline;
        cursor: pointer;
        transition: background-color 0.5s;
    }
-           .main:hover {
+           .main_page:hover {
                background-color: darkgreen;
                color: white;
    }
@@ -105,6 +110,7 @@ padding: 5px;
        color: white;
        border: none;
        font-size: 20px;
+       display: inline;
        cursor: pointer;
        transition: background-color 0.5s;
    }
@@ -119,6 +125,7 @@ padding: 5px;
        color: white;
        border: none;
        font-size: 20px;
+       display: inline;
        cursor: pointer;
        transition: background-color 0.5s;
    }
@@ -127,7 +134,7 @@ padding: 5px;
                color: black;
    }
    
-   .footer {
+   footer {
       background-color: rgb(255, 0, 0);
       text-align: center;
       color: rgb(255, 255, 255);
@@ -137,3 +144,29 @@ padding: 5px;
 .image {
     text-align: center;
 }
+/* main {
+    filter: grayscale(90%);
+}
+.head {
+    filter: grayscale(90%);
+}
+
+.technical_problems_window {
+    border: 3px solid red;
+    min-height: 200px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 13%;
+    margin-right: 200%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2em;
+    margin-top: 7%;
+}
+.text_techical_problem {
+    margin-top: 7%;
+} */
