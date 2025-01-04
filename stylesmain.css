@@ -144,7 +144,7 @@ padding: 5px;
 .image {
     text-align: center;
 }
-/* main {
+main {
     filter: grayscale(90%);
 }
 .head {
@@ -167,4 +167,4 @@ padding: 5px;
 }
 .text_techical_problem {
     margin-top: 7%;
-} */
+}
